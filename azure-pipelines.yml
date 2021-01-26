@@ -17,7 +17,7 @@ stages:
           
       - script: |
             rm trufflehog || true
-            docker run gesellix/trufflehog --json https://github.com/medrim/bp-tech-exercise > trufflehog
+            docker run gesellix/trufflehog --json https://github.com/medrim/riversafe-tech-poc > trufflehog
             cat trufflehog
         displayName: 'Scan repo'
 
